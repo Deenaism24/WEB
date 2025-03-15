@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+      body {
+          font-family: sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f8f8f8;
+          color: #333;
+      }
+
+      .container {
+          max-width: 960px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+
+      /* Header */
+      header {
+          background-color: #fff;
+          padding: 20px 0;
+          border-bottom: 1px solid #eee;
+      }
+
+      .header-inner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .site-name {
+          font-size: 1.5em;
+          font-weight: bold;
+      }
+
+      .header-links {
+          display: flex;
+          gap: 20px;
+      }
+
+      .header-links a {
+          text-decoration: none;
+          color: #555;
+      }
+
+      /* Hero Section */
+      .hero {
+          padding: 40px 0;
+      }
+
+      .hero-title {
+          font-size: 2.5em;
+          margin-bottom: 10px;
+      }
+
+      .hero-subtitle {
+          color: #777;
+          margin-bottom: 20px;
+      }
+
+      .hero-button {
+          background-color: #333;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+      }
+
+      .hero-image {
+          margin-top: 20px;
+          max-width: 100%;
+          height: auto;
+      }
+
+      /* Section */
+      .section {
+          padding: 40px 0;
+      }
+
+      .section-heading {
+          font-size: 2em;
+          margin-bottom: 20px;
+      }
+
+      .grid-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 20px;
+      }
+
+      .grid-item {
+          background-color: #fff;
+          padding: 15px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .grid-item img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+      }
+
+      .grid-item-title {
+          font-weight: bold;
+          margin-bottom: 5px;
+      }
+
+      .grid-item-description {
+          color: #666;
+      }
+
+      /* Testimonials */
+      .testimonial-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 20px;
+      }
+
+      .testimonial-item {
+          background-color: #fff;
+          padding: 15px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .testimonial-item .quote {
+          font-style: italic;
+          margin-bottom: 10px;
+      }
+
+      .testimonial-item .author {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+      }
+
+      .testimonial-item .author img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+      }
+
+
+      /* Button Section */
+
+      .button-section {
+          padding: 40px 0;
+          text-align: center;
+      }
+
+      .button-section button {
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          margin: 0 10px;
+          border-radius: 5px;
+
+      }
+
+      .button-section .primary-button {
+          background-color: #333;
+          color: #fff;
+      }
+
+      .button-section .secondary-button {
+          background-color: #eee;
+          color: #333;
+      }
+
+
+
+      /* Footer */
+      footer {
+          background-color: #fff;
+          padding: 20px 0;
+          border-top: 1px solid #eee;
+      }
+
+      .footer-inner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .footer-links {
+          display: flex;
+          gap: 20px;
+      }
+
+      .footer-links a {
+          text-decoration: none;
+          color: #555;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+          .container {
+              padding: 10px;
+          }
+
+          .header-inner, .footer-inner {
+              flex-direction: column;
+              align-items: flex-start;
+          }
+
+          .header-links, .footer-links {
+              margin-top: 10px;
+          }
+      }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <div class="site-name">Site Name</div>
+      <div class="header-links">
+        <a href="#">Page</a>
+        <a href="#">Page</a>
+        <a href="#">Page</a>
+        <a href="#">Admin</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">Landing page title</h1>
+    <p class="hero-subtitle">Subheading that sets up context, shares more info about the website, or generally gets people psyched to keep scrolling.</p>
+    <button class="hero-button">Button</button>
+    <img src="images/my_image.png" alt="Моя фотография" loading="lazy">
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-heading">Section heading</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="my_image.png" alt="Моя фотография" loading="lazy">
+        <h3 class="grid-item-title">Subheading</h3>
+        <p class="grid-item-description">Body text for whatever you'd like to add more to the subheading.</p>
+      </div>
+      <div class="grid-item">
+        <img src="my_image.png" alt="Моя фотография" loading="lazy">
+        <h3 class="grid-item-title">Subheading</h3>
+        <p class="grid-item-description">Body text for whatever good bits to expand on the main point.</p>
+      </div>
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1593565125434-b899ac93e238?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3">
+        <h3 class="grid-item-title">Subheading</h3>
+        <p class="grid-item-description">Body text for whatever you'd like to share more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-heading">Section heading</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="my_image.png" alt="Моя фотография" loading="lazy">
+        <h3 class="grid-item-title">Subheading</h3>
+        <p class="grid-item-description">Body text for whatever you'd like to expand on the main point.</p>
+        <h3 class="grid-item-title">Subheading</h3>
+        <p class="grid-item-description">Body text for whatever you'd like to say. Add even repeated points, quotes, anecdotes.</p>
+        <h3 class="grid-item-title">Subheading</h3>
+        <p class="grid-item-description">Body text for whatever you'd like to see here to the main point. It provides details, explanations, and context.</p>
+
+        <div>
+          <button>Button</button>
+          <button>Secondary Button</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-heading">Section heading</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="my_image.png" alt="Моя фотография" loading="lazy">
+        <h3 class="grid-item-title">Subheading</h3>
+        <p class="grid-item-description">Body text for whatever you'd like to add text to the subheading.</p>
+
+      </div>
+      <div class="grid-item">
+        <img src="my_image.png" alt="Моя фотография" loading="lazy">
+        <h3 class="grid-item-title">Subheading</h3>
+        <p class="grid-item-description">Body text for whatever you'd like to expand on the main point.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-heading">Section heading</h2>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-item">
+        <p class="quote">"A specific piece of praise"</p>
+        <div class="author">
+          <img src="my_image.png" alt="Моя фотография" loading="lazy">
+          <span>Name</span>
+          <span>Description</span>
+        </div>
+      </div>
+
+      <div class="testimonial-item">
+        <p class="quote">"A fantastic bit of feedback"</p>
+        <div class="author">
+          <img src="my_image.png" alt="Моя фотография" loading="lazy">
+          <span>Name</span>
+          <span>Description</span>
+        </div>
+      </div>
+
+      <div class="testimonial-item">
+        <p class="quote">"A genuinely glowing review"</p>
+        <div class="author">
+          <img src="my_image.png" alt="Моя фотография" loading="lazy">
+          <span>Name</span>
+          <span>Description</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="button-section">
+  <div class="container">
+    <h2 class="section-heading">Section heading</h2>
+    <button class="primary-button">Button</button>
+    <button class="secondary-button">Secondary button</button>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="site-name">Site Name</div>
+      <div class="footer-links">
+        <a href="#">Page</a>
+        <a href="#">Page</a>
+        <a href="#">Page</a>
+        <a href="#">Page</a>
+        <a href="#">Page</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8" />-->
+<!--  <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+<!--  <title>WS playground</title>-->
+<!--  <link rel="stylesheet" href="/style.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<header class="logo">-->
+<!--  <a href="https://www.jetbrains.com/webstorm/">-->
+<!--    <img src="/webstorm-logo.svg" alt="WebStorm logo" width="344"-->
+<!--         height="90">-->
+<!--  </a>-->
+<!--</header>-->
+<!--<main id="app">-->
+<!--  <h1 class="title">-->
+<!--    Thank you for trying it out. <br /> Your first project is up and running-->
+<!--    now.-->
+<!--  </h1>-->
+<!--  <section class="counter">-->
+<!--    <div class="counter-info">-->
+<!--      <p class="counter-text">Counter is</p>-->
+<!--      <p class="counter-value" id="counter-value"></p>-->
+<!--    </div>-->
+<!--    <div class="counter-interaction">-->
+<!--      <button id="increaseByOne" type="button">+1</button>-->
+<!--      <button id="increaseByTwo" type="button">+2</button>-->
+<!--      <button id="decreaseByOne" type="button">-1</button>-->
+<!--      <button id="decreaseByTwo" type="button">-2</button>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--</main>-->
+<!--<footer class="technologies">-->
+<!--  <img src="/technologies.svg" alt="List of supported technologies">-->
+<!--</footer>-->
+<!--<script type="module" src="/src/main.js"></script>-->
+<!--</body>-->
+<!--</html>-->
